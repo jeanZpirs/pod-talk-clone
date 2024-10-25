@@ -1,0 +1,223 @@
+@use "../abstracts/variables";
+
+.lastest {
+  border: 2px solid variables.$primary-color;
+  border-radius: 2rem;
+  padding: 3rem;
+
+  display: grid;
+  grid-template-columns: min-content 1fr min-content;
+  gap: 2rem;
+
+  transition: all 0.3s ease;
+
+  &:hover {
+    border-color: transparent;
+    transform: translateY(-3px);
+    box-shadow: variables.$normal-shadow;
+    background-color: variables.$white-color;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  &__btn:link,
+  &__btn:visited {
+    font-size: 1.4rem;
+    padding: 0.7rem 1.5rem;
+    text-align: center;
+  }
+
+  &__img--box {
+    position: relative;
+    border-radius: 3rem;
+    overflow: hidden;
+    width: 12rem;
+    height: 12rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__img--icon-box {
+    padding: 0.5rem;
+    width: 3.25rem;
+    height: 3.25rem;
+    border-radius: 50%;
+    background-color: variables.$primary-color;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    transition: all 0.2s;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      background-color: variables.$secondary-color;
+    }
+  }
+
+  &__img--icon {
+    color: variables.$white-color;
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+
+  &__cap {
+    display: flex;
+    gap: 4rem;
+    font-size: 1.4rem;
+    font-family: variables.$title-font-family;
+    color: variables.$p-color;
+    margin-bottom: 0.8rem;
+  }
+
+  &__duration {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+  }
+
+  &__duration-icon {
+    color: variables.$primary-color;
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+
+  &__numCap {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+
+    span {
+      color: variables.$white-color;
+      background-color: variables.$custom-btn-bg-color;
+      padding: 0.5rem;
+      border-radius: 50%;
+      font-size: 1.05rem;
+      font-weight: bold;
+    }
+  }
+
+  &__title {
+    font-size: 2.2rem;
+    color: variables.$primary-color;
+    transition: all 0.2s;
+    cursor: pointer;
+    margin-bottom: 0.8rem;
+    display: inline-block;
+    &:hover {
+      color: variables.$secondary-color;
+    }
+  }
+
+  &__speaker {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    align-items: center;
+  }
+
+  &__speaker-img-box {
+  }
+
+  &__speaker-img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100rem;
+    object-fit: cover;
+  }
+
+  &__speaker--name {
+    color: variables.$p-color;
+    margin-bottom: 0.2rem;
+  }
+
+  &__speaker--type {
+    font-weight: bold;
+    font-family: variables.$title-font-family;
+    color: variables.$p-color;
+    font-size: 1.6rem;
+    letter-spacing: 0.5px;
+  }
+
+  &__description {
+    color: variables.$p-color;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    letter-spacing: normal;
+  }
+
+  &__stats {
+    display: flex;
+    gap: 2.2rem;
+  }
+
+  &__stat-box {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+
+    &:hover {
+      .lastest__stat-icon {
+        color: variables.$secondary-color;
+      }
+
+      p {
+        color: variables.$primary-color;
+        transition: all 0.2s;
+      }
+    }
+
+    p {
+      color: variables.$p-color;
+      font-family: variables.$title-font-family;
+    }
+  }
+
+  &__stat-icon {
+    width: 1.6rem;
+    height: 1.6rem;
+    color: variables.$primary-color;
+    transition: all 0.2s;
+  }
+
+  &__social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__social-box {
+    background-color: variables.$dark-color;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    transition: all 0.2s;
+    cursor: pointer;
+
+    &:hover {
+      background-color: variables.$secondary-color;
+    }
+  }
+
+  &__social--icon {
+    width: 1.4rem;
+    height: 1.4rem;
+    color: variables.$white-color;
+  }
+}

@@ -1,0 +1,30 @@
+@use "../abstracts/variables";
+
+.hero {
+  padding-top: 20rem;
+  overflow-x: hidden;
+  padding-bottom: 10rem;
+
+  &__title {
+    color: variables.$white-color;
+    margin-bottom: 2rem;
+  }
+  &__text {
+    color: variables.$white-color;
+    margin-bottom: 4rem;
+  }
+
+  &__btn {
+    display: inline-block;
+    margin-bottom: 6rem;
+  }
+
+  &__speakers {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    transform: translateX(-15rem);
+    list-style: none;
+    margin-bottom: 4rem;
+  }
+}

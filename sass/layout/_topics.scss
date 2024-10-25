@@ -1,0 +1,49 @@
+@use "../abstracts/variables";
+.topics {
+  gap: 3rem;
+
+  &__item {
+    border-radius: 2.4rem;
+    overflow: hidden;
+    transition: all 0.3s ease;
+
+    &:hover {
+      box-shadow: variables.$normal-shadow;
+      transform: translateY(-3px);
+
+      .topics__img {
+        padding: 1.5rem;
+        border-radius: 2rem;
+      }
+    }
+  }
+
+  &__img {
+    padding-bottom: 1.5rem;
+    display: block;
+    width: 100%;
+    transition: all 0.3s ease;
+  }
+
+  &-box-text {
+    padding: 0 3rem 2rem 3rem;
+    text-align: left;
+  }
+
+  &__title {
+    font-size: 2.4rem;
+    color: variables.$primary-color;
+    margin-bottom: 1.2rem;
+  }
+
+  &__episodes {
+    display: inline-block;
+    background-color: variables.$secondary-color;
+    color: variables.$white-color;
+    padding: 0.5rem 1rem;
+    border-radius: 100rem;
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+  }
+}

@@ -1,0 +1,26 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  &-box {
+    display: flex;
+    align-items: center;
+  }
+
+  &-logo-box {
+  }
+
+  &__logo {
+    width: 10rem;
+    margin-right: 4rem;
+  }
+
+  &-input-box {
+  }
+
+  &-nav {
+    margin-left: auto;
+  }
+}
