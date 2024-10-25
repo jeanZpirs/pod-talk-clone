@@ -1,0 +1,39 @@
+@use "../abstracts/variables";
+
+.trending {
+  gap: 2rem;
+
+  &__item {
+    padding: 3rem;
+    border-radius: 3rem;
+    background-color: variables.$section-bg-color;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+
+    &:hover {
+      border: 2px solid variables.$primary-color;
+      transform: translateY(-3px);
+      box-shadow: variables.$normal-shadow;
+      background-color: variables.$white-color;
+    }
+  }
+
+  &__img {
+    border-radius: 3rem;
+    height: 21rem;
+    object-fit: cover;
+    margin-bottom: 2rem;
+  }
+
+  &__description {
+    color: variables.$p-color;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+}

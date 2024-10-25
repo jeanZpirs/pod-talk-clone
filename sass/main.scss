@@ -10,12 +10,14 @@
 @use "components/speaker";
 @use "components/bullets";
 @use "components/lastest-episode";
+@use "components/stats";
 
 // @use "layout";
 @use "layout/lastest";
 @use "layout/header";
 @use "layout/hero";
 @use "layout/topics";
+@use "layout/trending";
 
 // @use "pages";
 @use "pages/home";

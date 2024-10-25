@@ -120,36 +120,6 @@
     }
   }
 
-  &__speaker {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 2rem;
-    align-items: center;
-  }
-
-  &__speaker-img-box {
-  }
-
-  &__speaker-img {
-    width: 5rem;
-    height: 5rem;
-    border-radius: 100rem;
-    object-fit: cover;
-  }
-
-  &__speaker--name {
-    color: variables.$p-color;
-    margin-bottom: 0.2rem;
-  }
-
-  &__speaker--type {
-    font-weight: bold;
-    font-family: variables.$title-font-family;
-    color: variables.$p-color;
-    font-size: 1.6rem;
-    letter-spacing: 0.5px;
-  }
-
   &__description {
     color: variables.$p-color;
     font-weight: 300;
@@ -160,36 +130,6 @@
   &__stats {
     display: flex;
     gap: 2.2rem;
-  }
-
-  &__stat-box {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    cursor: pointer;
-
-    &:hover {
-      .lastest__stat-icon {
-        color: variables.$secondary-color;
-      }
-
-      p {
-        color: variables.$primary-color;
-        transition: all 0.2s;
-      }
-    }
-
-    p {
-      color: variables.$p-color;
-      font-family: variables.$title-font-family;
-    }
-  }
-
-  &__stat-icon {
-    width: 1.6rem;
-    height: 1.6rem;
-    color: variables.$primary-color;
-    transition: all 0.2s;
   }
 
   &__social {

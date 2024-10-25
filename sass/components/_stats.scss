@@ -1,0 +1,33 @@
+@use "../abstracts/variables";
+
+.stats {
+  &-box {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+
+    &:hover {
+      .lastest__stat-icon {
+        color: variables.$secondary-color;
+      }
+
+      p {
+        color: variables.$primary-color;
+        transition: all 0.2s;
+      }
+    }
+
+    p {
+      color: variables.$p-color;
+      font-family: variables.$title-font-family;
+    }
+  }
+
+  &-icon {
+    width: 1.6rem;
+    height: 1.6rem;
+    color: variables.$primary-color;
+    transition: all 0.2s;
+  }
+}

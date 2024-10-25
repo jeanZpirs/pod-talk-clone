@@ -75,4 +75,34 @@
     right: 3rem;
     opacity: 1;
   }
+
+  &__profile {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    align-items: center;
+  }
+
+  &__speaker-img-box {
+  }
+
+  &__profile-img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100rem;
+    object-fit: cover;
+  }
+
+  &__profile--name {
+    color: variables.$p-color;
+    margin-bottom: 0.2rem;
+  }
+
+  &__profile--type {
+    font-weight: bold;
+    font-family: variables.$title-font-family;
+    color: variables.$p-color;
+    font-size: 1.6rem;
+    letter-spacing: 0.5px;
+  }
 }
