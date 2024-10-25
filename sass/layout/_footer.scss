@@ -1,0 +1,145 @@
+@use "../abstracts/variables";
+
+.footer {
+  padding-top: 30rem;
+  color: variables.$white-color;
+  gap: 5rem;
+  grid-template-columns: 0.5fr 0.5fr max-content 1fr;
+
+  &__cta {
+    grid-column: span 2;
+    border: 1px solid variables.$white-color;
+    border-radius: 1rem;
+    padding: 5rem 3rem 3rem 3rem;
+
+    position: relative;
+  }
+
+  &__cta--heading {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: max-content;
+    background-color: variables.$white-color;
+    padding: 1rem 5rem;
+    border-radius: 100rem;
+  }
+
+  &__subscribe {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__input {
+    border: none;
+    padding: 2rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      font-size: 1.8rem;
+      font-family: variables.$title-font-family;
+      color: #6c757d;
+    }
+  }
+
+  & &__btn {
+    border-radius: 0rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  &__heading {
+    font-size: 2.4rem;
+    font-weight: bold;
+    font-family: variables.$title-font-family;
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  &__contact {
+    span {
+      margin-bottom: 2rem;
+    }
+    a {
+      color: currentColor;
+    }
+
+    a[href^="mailto"] {
+      border-bottom: 1px solid white;
+      padding-bottom: 5px;
+    }
+
+    p:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__lastcol {
+    justify-self: center;
+  }
+
+  &__mobile {
+    margin-bottom: 3rem;
+  }
+
+  &__app {
+    display: flex;
+    gap: 2rem;
+
+    img {
+      width: 12rem;
+    }
+  }
+
+  &__social {
+  }
+
+  &__social-icon-box {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  &__copy-box {
+    justify-self: center;
+    align-self: center;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  &__copy {
+  }
+
+  &__logo {
+    width: 12rem;
+  }
+
+  &__nav {
+    grid-column: span 2;
+    align-self: center;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__link {
+    color: variables.$white-color;
+    transition: all 0.3s;
+    &:hover {
+      color: variables.$link-hover-color;
+    }
+  }
+}

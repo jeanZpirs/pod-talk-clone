@@ -511,7 +511,7 @@ img {
 
 .topics {
   gap: 3rem;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 }
 .topics__item {
   border-radius: 2.4rem;
@@ -593,6 +593,118 @@ img {
   margin-bottom: 1rem;
 }
 
+.footer {
+  padding-top: 30rem;
+  color: #ffffff;
+  gap: 5rem;
+  grid-template-columns: 0.5fr 0.5fr max-content 1fr;
+}
+.footer__cta {
+  grid-column: span 2;
+  border: 1px solid #ffffff;
+  border-radius: 1rem;
+  padding: 5rem 3rem 3rem 3rem;
+  position: relative;
+}
+.footer__cta--heading {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: max-content;
+  background-color: #ffffff;
+  padding: 1rem 5rem;
+  border-radius: 100rem;
+}
+.footer__subscribe {
+  display: flex;
+  flex-direction: column;
+}
+.footer__input {
+  border: none;
+  padding: 2rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.footer__input:focus {
+  outline: none;
+}
+.footer__input::placeholder {
+  font-size: 1.8rem;
+  font-family: "Sono", sans-serif;
+  color: #6c757d;
+}
+.footer .footer__btn {
+  border-radius: 0rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+}
+.footer__heading {
+  font-size: 2.4rem;
+  font-weight: bold;
+  font-family: "Sono", sans-serif;
+  display: block;
+  margin-bottom: 1rem;
+}
+.footer__contact span {
+  margin-bottom: 2rem;
+}
+.footer__contact a {
+  color: currentColor;
+}
+.footer__contact a[href^=mailto] {
+  border-bottom: 1px solid white;
+  padding-bottom: 5px;
+}
+.footer__contact p:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.footer__lastcol {
+  justify-self: center;
+}
+.footer__mobile {
+  margin-bottom: 3rem;
+}
+.footer__app {
+  display: flex;
+  gap: 2rem;
+}
+.footer__app img {
+  width: 12rem;
+}
+.footer__social-icon-box {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.footer__copy-box {
+  justify-self: center;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.footer__logo {
+  width: 12rem;
+}
+.footer__nav {
+  grid-column: span 2;
+  align-self: center;
+}
+.footer__list {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__link {
+  color: #ffffff;
+  transition: all 0.3s;
+}
+.footer__link:hover {
+  color: #0066cc;
+}
+
 .section-hero {
   background-image: url("../../images/templatemo-wave-banner.jpg"), linear-gradient(#348cd2, #ffffff);
   background-repeat: no-repeat;
@@ -610,6 +722,14 @@ img {
 
 .section-trending {
   padding-bottom: 10rem;
+}
+
+.section-footer {
+  padding-bottom: 10rem;
+  background-image: url("../../images/templatemo-wave-footer.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 /*# sourceMappingURL=style.css.map */
