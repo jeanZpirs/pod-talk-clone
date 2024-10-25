@@ -2,6 +2,8 @@
 .topics {
   gap: 3rem;
 
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+
   &__item {
     border-radius: 2.4rem;
     overflow: hidden;
@@ -35,7 +37,8 @@
   }
 
   &__episodes {
-    display: inline-block;
+    display: block;
+    width: max-content;
     background-color: variables.$secondary-color;
     color: variables.$white-color;
     padding: 0.5rem 1rem;

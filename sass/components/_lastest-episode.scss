@@ -138,26 +138,4 @@
     align-items: center;
     gap: 1rem;
   }
-
-  &__social-box {
-    background-color: variables.$dark-color;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 4rem;
-    height: 4rem;
-    transition: all 0.2s;
-    cursor: pointer;
-
-    &:hover {
-      background-color: variables.$secondary-color;
-    }
-  }
-
-  &__social--icon {
-    width: 1.4rem;
-    height: 1.4rem;
-    color: variables.$white-color;
-  }
 }
